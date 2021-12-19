@@ -1,0 +1,28 @@
+
+
+.modal{
+    z-index: 999999;
+}
+.modal-body{
+    max-height: 70vh;
+    overflow-y: auto;
+    overflow-x:hidden;
+}
+
+.img-portada, .img-arxiu,.video-arxiu{
+    width: 100%;
+    object-fit: cover;
+    border: 5px solid rgba(255,255,255,0.5);
+    position: relative;
+}
+
+#desc{
+    width:100%;
+}
+
+.modal-row{
+    width: 100%;
+}
+.modal-row input{
+    width: 100%;
+}

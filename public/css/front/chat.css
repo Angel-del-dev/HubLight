@@ -1,0 +1,241 @@
+body{
+    background:#eee;    
+}
+
+.row{
+    max-width: 100%;
+    margin: 0;
+}
+
+.xats-disp{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(246, 248, 232);
+    position: absolute;
+    z-index: 100;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    overflow-y: auto;
+}
+
+.card-header i{
+    color: white;
+    font-size: 30px;
+}
+
+.closeButon{
+    width: 30px;
+    height: 30px;
+    padding: 1px;
+    border-radius: 50%;
+    float: right;
+    background-color: rgb(49, 49, 49,0.3);
+}
+
+.Agrega{
+    font-size: 25px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.closeButon .fa{
+    font-size: 27px;
+}
+
+.foto-Chats{
+    width: 40px;
+    height: 40px;
+}
+
+.foto-Chats img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.chat-msg{
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.addChat{
+    margin-bottom: 10px;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.addChat:hover{
+    background-color: rgb(41, 41, 41,0.1);
+}
+
+.chat-list {
+    padding: 0;
+    font-size: .8rem;
+}
+
+.chat-list li {
+    margin-bottom: 10px;
+    overflow: auto;
+    color: #ffffff;
+}
+
+.chat-list .chat-img {
+    float: left;
+    width: 48px;
+}
+
+.chat-list .chat-img img {
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    width: 100%;
+}
+
+.chat-list .chat-message {
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    background: #5a99ee;
+    display: inline-block;
+    padding: 10px 20px;
+    position: relative;
+    max-width: 100%;
+}
+
+.chat-list .chat-message:before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    width: 0;
+    height: 0;
+}
+
+.chat-list .chat-message h5 {
+    margin: 0 0 5px 0;
+    font-weight: 600;
+    line-height: 100%;
+    font-size: .9rem;
+}
+
+.chat-list .chat-message p {
+    line-height: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.chat-list .chat-body {
+    margin-left: 20px;
+    float: left;
+    width: 70%;
+}
+
+.chat-list .in .chat-message:before {
+    left: -12px;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid #5a99ee;
+}
+
+.chat-list .out .chat-img {
+    float: right;
+}
+
+.chat-list .out .chat-body {
+    float: right;
+    margin-right: 20px;
+    text-align: right;
+}
+
+.chat-list .out .chat-message {
+    background: #fc6d4c;
+}
+
+.chat-list .out .chat-message:before {
+    right: -12px;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #fc6d4c;
+}
+
+.card .card-header:first-child {
+    -webkit-border-radius: 0.3rem 0.3rem 0 0;
+    -moz-border-radius: 0.3rem 0.3rem 0 0;
+    border-radius: 0.3rem 0.3rem 0 0;
+}
+.card .card-header {
+    background: #17202b;
+    border: 0;
+    font-size: 1rem;
+    padding: .65rem 1rem;
+    position: relative;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.card-body{
+    height: 50vh;
+    overflow-y: auto;
+}
+
+.inputMsg{
+    width: 100%;
+    overflow-y: none;
+    max-height: 100px;
+}
+
+.inputMsg:focus{
+    margin: 0;
+}
+
+.butonSendMSG{
+    margin: 2px;
+}
+
+.iconMSG{
+    font-size: 20px;
+}
+
+.div-nouUser{
+    width: 60%;
+}
+
+.div-nouUser input{
+    max-width: 70%;
+}
+
+.button-add-new-user{
+    cursor: pointer;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    margin-left: 5px;
+    padding-left: 5px;
+}
+
+.button-add-new-user:hover{
+    background-color: rgb(255, 255, 255,0.2);
+}
+
+.showChat{
+    cursor: pointer;
+}
+
+.modal-content .row{
+    padding: 0;
+}
+
+.msgContingut{
+    background-color: rgb(255, 255, 255,0.2);
+    border-radius: 15px;
+}
+
+.msgContingut img{
+    border-radius: 15px;
+    max-width: 100%;
+    max-height: 200px;
+}
+
+.card-header .multiselect {
+    color: white;
+}

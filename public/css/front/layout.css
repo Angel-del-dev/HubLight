@@ -1,0 +1,191 @@
+/* ==================================== variables ===============================================*/
+:root {
+    --lightGreen: #eafcb9;
+    --green: #daec92;
+    --greenShadow:#c5d67fa3;
+    --darkGreen: #b9e28c;
+  }
+/* ==================================== fuentes ===============================================*/
+@font-face {
+  font-family: "LeagueSpartan";
+  src: url("fonts/LeagueSpartan-Bold.otf");
+}
+/* ==================================== header ===============================================*/
+.navbar{
+    position: fixed;
+    background-color: var(--green);
+    width: 100%;
+    padding: 15px;
+    box-shadow: 0px 0px 5px 5px rgb(134, 134, 134);
+    z-index: 1000;
+}
+
+.fa, a img, .foto-coment, .chat-img{
+    cursor: pointer;
+}
+
+.navbar-brand{
+    font-size: 2em;
+    font-family: LeagueSpartan;
+}
+
+#navbarSupportedContent ul{
+    position:relative;
+    margin-left: auto;
+  margin-right: 10%;
+}
+
+.navbar input{
+    background-color: var(--lightGreen);
+}
+
+li .nav-link{
+    border-radius: 10%;
+    width: 70px;
+    text-align: center;
+}
+
+li .nav-link:hover{
+    background-color: var(--greenShadow);
+    animation: navbar-hover 0.5s forwards;
+}
+
+i{
+    color: black;
+    font-size: 35px;
+}
+
+.dropdown-menu{
+    background-color: var(--lightGreen);
+    box-shadow: 1px 2px 2px  rgb(134, 134, 134);
+}
+
+.dropdown-menu a:hover, .isSelected{
+    background-color: var(--greenShadow);
+}
+
+.nav-identificador{
+    margin-left: 15px;
+}
+
+.header-perfil-img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;
+    background-color: white;
+    object-fit: cover;
+}
+
+.dropdown-menu p{
+    text-align: center;
+}
+
+.dropdown-item, .nav-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-item i{
+    margin-right: 10px;
+}
+
+.dropdown-divider{
+    border-top: 1px dashed #344637;
+}
+
+.notification-buttons{
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    margin-left: 5px;
+}
+.notification-buttons i{
+    font-size: 25px;
+}
+
+/* ==================================== contenido ===============================================*/
+.modal-subir{
+    z-index: 99999;
+    bottom: 85px;
+    right: 20px;
+    position: fixed;
+    background-color: var(--greenShadow);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.modal-chat{
+    z-index: 99999;
+    bottom: 20px;
+    right: 20px;
+    position: fixed;
+    background-color: var(--greenShadow);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+.content{
+    padding-top: 120px;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 10%;
+    min-height: 100vh;
+    background-color: rgb(246, 248, 232);
+    width: 100%;
+}
+/* ==================================== footer ===============================================*/
+footer{
+    background-color: var(--green);
+}
+/* ==================================== responsive ===============================================*/
+@media (max-width: 991px) {
+    .dropdown-menu{
+        box-shadow: 0px 0px 2px  rgb(134, 134, 134);
+    }
+
+    li .nav-link {
+      width: 100%;
+    }
+
+    #navbarSupportedContent form{
+        justify-content: center;
+    }
+
+    .navbar-collapse{
+        max-height: 80vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .content{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+  }
+/* ==================================== keyframes ===============================================*/
+@keyframes navbar-hover {
+    from{
+        transform: scale(1);
+    }
+
+    to{
+        transform: scale(1.2);
+    }
+}
+/* .header .navbar .navbar-collapse ul{
+    float: right;
+}
+i{
+    color: black;
+    font-size: 50px;
+}
+
+ .show{
+     margin-top: 20px;
+    background-color: white;
+    box-shadow: 0px 5px 5px 5px rgb(180, 180, 180);
+} */

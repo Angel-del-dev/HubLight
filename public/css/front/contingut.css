@@ -1,0 +1,136 @@
+.header-contingut{
+    width: 100%;
+    background-color: #cccccc99;
+    border-radius: 10px 10px 0 0;
+    padding: 5px;
+    box-shadow: 2px 2px 2px #3d3d3d;
+    display: flex;
+}
+.header-contingut>a>div>img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;
+    background-color: white;
+    object-fit: cover;
+}
+
+.header-contingut h2{
+    text-align: center;
+    align-self: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.contingut-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border:solid 10px #3d3d3d;
+    box-shadow: 2px 2px 2px #3d3d3d;
+    background-color: rgb(0, 0, 0);   
+    z-index: 2;
+    width: 100%;
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contingut-principal>img,.contingut-principal>video{
+    max-width: 100%;
+    min-height: 200px;
+    max-height: 500px;
+}
+
+.footer-contingut{
+    width: 100%;
+    background-color: #cccccc99;
+    box-shadow: 2px 2px 2px #3d3d3d;
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 5px;
+    margin-bottom: 100px;
+}
+
+.header-footer-contingut{
+    width: 100%;
+    padding: 10px;
+    background-color: #9c9c9c99;
+    border-bottom: black 1px solid;
+}
+
+.header-footer-contingut i{
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.header-footer-contingut i:hover{
+    background-color: #72727299;
+}
+.foto-coment{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;
+    background-color: white;
+    object-fit: cover;
+    margin-bottom: -30px;
+    margin-left: 5px;
+    z-index: 2;
+    position: relative;   
+}
+.border-bot{
+    border-bottom: solid 1px black;
+}
+textarea{
+    min-height: 50px;
+    z-index: 0;
+}
+
+textarea:focus{
+    margin-top: 25px;
+}
+
+.meGusta{
+    font-size: 40px;
+    color: rgb(172, 1, 1);
+}
+
+.comentario{
+    border-top: dashed 1px black;
+    margin: 4px;
+    padding-top: 4px;
+}
+
+.text-comment{
+    margin-left: 60px;    
+}
+
+.fecha-contingut{
+    position: relative;
+    float: right;
+}
+
+.descripcio{
+    width: 100%;
+    padding: 10px;
+}
+
+span{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.most-coment{
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
