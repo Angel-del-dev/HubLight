@@ -1,5 +1,4 @@
 # Hublight
 
-A social network for artists
+A social network for artists built as a final project
 
-Coming soon...
